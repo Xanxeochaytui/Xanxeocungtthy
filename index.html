@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Link Converter</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f4ff; /* Nền tím cực nhạt */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(150, 120, 200, 0.1);
+            width: 90%;
+            max-width: 450px;
+            border: 1px solid #efe6ff;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #e0d4ff;
+            margin-right: 15px;
+            border: 2px solid #d1bfff;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #5a4a8d; /* Tím đậm cho chữ */
+            text-transform: uppercase;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1.5px solid #e0d4ff;
+            border-radius: 10px;
+            outline: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #b194ff;
+            box-shadow: 0 0 8px rgba(177, 148, 255, 0.2);
+        }
+
+        .btn-main {
+            background-color: #7c5cfc; /* Tím chủ đạo */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background-color: #6a49e6;
+        }
+
+        .btn-wide {
+            width: 100%;
+            background-color: #5a4a8d;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .result-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fdfbff;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1px dashed #c4b5fd;
+        }
+
+        .link-text {
+            color: #7c5cfc;
+            font-size: 14px;
+            text-decoration: none;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          max-width: 250px;
+        }
+
+        .btn-copy {
+            background: white;
+            border: 1px solid #7c5cfc;
+            color: #7c5cfc;
+            padding: 8px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .btn-copy:hover {
+            background: #f5f2ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="avatar"></div>
+        <div class="title">ID: 17314740041</div>
+    </div>
+
+    <p style="font-weight: bold; color: #5a4a8d; margin-bottom: 10px;">ĐỔI LINK SHOPEE CÓ MÃ TOÀN SÀN</p>
+    
+    <div class="input-group">
+        <input type="text" placeholder="https://shopee.vn/...">
+        <button class="btn-main">LẤY LINK</button>
+    </div>
+
+    <button class="btn-wide">MỞ LINK QUA SHOPEE LẤY MÃ</button>
+
+    <div class="result-box">
+        <a href="#" class="link-text">https://s.shopee.vn/result...</a>
+        <button class="btn-copy">SAO CHÉP</button>
+    </div>
+</div>
+
+</body>
+</html>
